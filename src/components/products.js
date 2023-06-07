@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts, selectProducts, selectSearchResults } from '../slices/productsSlice'; // Replace with the correct path to your products slice file
+import { fetchProducts, selectProducts } from '../slices/productsSlice'; // Replace with the correct path to your products slice file
 import ProductSearch from './search';
 import { addProduct, removeProduct } from '../slices/cartSlice';
 
@@ -73,7 +73,6 @@ const ProductsComponent = () => {
                         <h3>{selectedProduct.title}</h3>
                         <p>Price: ${selectedProduct.price}</p>
                         <p>{selectedProduct.description}</p>
-                        {/* Add more information about the product */}
                     </div>
                 </div>
             )}
