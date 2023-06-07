@@ -9,15 +9,17 @@ const Categories = () => {
 
 
 
-
+    //fetches categories from the api
     useEffect(() => {
         dispatch(fetchCategories());
     }, [dispatch]);
 
+    //function to show items from a specific category
     const handleCategoryClick = (category) => {
         dispatch(fetchProductsByCategory(category));
     };
 
+    //fetches all of the items when clicked on the "all products button"
     const handleAllProducts = () => {
         dispatch(fetchProducts())
     };

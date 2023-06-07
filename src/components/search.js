@@ -10,11 +10,13 @@ const ProductSearch = () => {
   const [keyword, setKeyword] = useState('');
   const dispatch = useDispatch();
 
+  //search functionality together 
+  //with equalizing the products shown with the search results
   const handleSearch = async () => {
     await dispatch(searchProductsByTitle(keyword));
     dispatch(setSearchResultsToProducts());
   };
-  
+
 
 
 

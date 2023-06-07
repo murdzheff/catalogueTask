@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 export default function CartButton(props) {
   const cartState = useSelector(state => state.cart)
 
+  //controls cart modal display
   function handleModal(e) {
     e.preventDefault();
     props.setModal(!props.cartModal)

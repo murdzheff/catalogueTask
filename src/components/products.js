@@ -8,16 +8,18 @@ const ProductsComponent = () => {
     const dispatch = useDispatch();
     const products = useSelector(selectProducts);
     const cart = useSelector((state) => state.cart);
-
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [dialogOpen, setDialogOpen] = useState(false);
 
+
+    //fetches all products from the api to show on the page at start
     useEffect(() => {
         dispatch(fetchProducts());
     }, [dispatch]);
 
+
+    //functionality to remove/add items from the cart
     const handleCart = (product) => {
-        
         if (checkIfInCart(product.id)) {
             dispatch(removeProduct(product.id));
         } else {
@@ -25,10 +27,14 @@ const ProductsComponent = () => {
         }
     };
 
+    //function to check if a specific item is in the card 
+    //so we can change button content and functionality depending on that
     const checkIfInCart = (id) => {
         return cart.find((item) => item.id === id) !== undefined;
     };
 
+
+    //more info dialog controls
     const openDialog = (product) => {
         setSelectedProduct(product);
         setDialogOpen(true);

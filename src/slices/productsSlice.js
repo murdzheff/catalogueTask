@@ -21,7 +21,6 @@ export const searchProductsByTitle = createAsyncThunk('products/search', async (
   const filteredData = data.filter((product) =>
     product.title.toLowerCase().includes(searchInput.toLowerCase())
   );
-  console.log(filteredData)
   return filteredData;
 });
 
