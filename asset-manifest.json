@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/github.io/cataloguetask/static/css/main.c1306376.css",
+    "main.js": "/github.io/cataloguetask/static/js/main.7dd2c50c.js",
+    "static/js/787.55c42381.chunk.js": "/github.io/cataloguetask/static/js/787.55c42381.chunk.js",
+    "static/media/cart.png": "/github.io/cataloguetask/static/media/cart.61b1d15022c6e386ad7c.png",
+    "index.html": "/github.io/cataloguetask/index.html",
+    "main.c1306376.css.map": "/github.io/cataloguetask/static/css/main.c1306376.css.map",
+    "main.7dd2c50c.js.map": "/github.io/cataloguetask/static/js/main.7dd2c50c.js.map",
+    "787.55c42381.chunk.js.map": "/github.io/cataloguetask/static/js/787.55c42381.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1306376.css",
+    "static/js/main.7dd2c50c.js"
+  ]
+}
